@@ -568,7 +568,7 @@ void showPage(uint32_t dateTime, String city, float temp, float humidity, String
   showMoon(angle, illumination);    // show moon icon
   String illum = "Illum: " + String(illumination) + procent;
   String age = "Age: " + String(int(angle / 29.53)) + " day(s)"; 
-  printText(100, 265, "Phases of the Moon:");
+  printText(100, 265, "Phase of the Moon:");
   printText(100, 280, age);   //  moon age
   printText(100, 295, illum); //  moon illumination
 }
