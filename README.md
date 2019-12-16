@@ -1,6 +1,5 @@
 # WeatherAppArduiTouch
-Time, date, weather and moon phases app for ArduiTouch and ESP32
-
+App for showing time, date, weather and moon phases with ArduiTouch and NodeMCU-32S
 
 # ArduiTouch ESP
 ArduiTouch is a touchscreen enclosure set made for wall mounting with NodeMCU or Wemos D1 Mini boards based on ESP8266 or ESP32 platforms.
