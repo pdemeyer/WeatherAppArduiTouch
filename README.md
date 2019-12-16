@@ -55,7 +55,7 @@ and change it to this:
 #define TOUCH_CS	14     
 //#define TFT_WR	22  
 ```  
-After this, save the file. We need to make these changes because pins of the TFT LCD screen are connected to pins of the NodeMCU-32S like in the changed text (you can see it on the connection diagram). Backlight pin is controlled separately, so we do not set it up here.
+After this, save the file. We need to make these changes because pins of the TFT LCD screen are connected to pins of the NodeMCU-32S like in the changed text (you can see it on the connection diagram). Backlight pin is controlled separately, so we do not set-up it here.
 
 The second library is for Real Time API called "NTPClient". Open Arduino IDE, and go to Tools > Manage Libraries. Type "NTP" in the search box and install library “NTPClient” by “Fabrice Wenberg”.
 
@@ -76,3 +76,7 @@ digitalWrite(15, LOW);  // turn ON
 ```
 
 You can use PWM on digital pin 15 to adjust different levels of brightness for screen.
+
+# Code explanation
+
+Code is explained in detail in free eBook Quick Starter Guide for ArduiTouch, on the site: https://delivery.shopifyapps.com/-/13a9ce242261d0a6/d6e380af0a3968ab
