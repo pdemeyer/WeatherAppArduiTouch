@@ -29,9 +29,9 @@ Find following lines of the text (at 156 line number):
 // ###### EDIT THE PIN NUMBERS IN THE LINES FOLLOWING TO SUIT YOUR ESP32 SETUP   
 // For ESP32 Dev board (only tested with ILI9341 display)
 // The hardware SPI can be mapped to any pins
-//#define TFT_MISO	19
-//#define TFT_MOSI	23
-//#define TFT_SCLK	18
+//#define TFT_MISO		19
+//#define TFT_MOSI		23
+//#define TFT_SCLK		18
 //#define TFT_CS		15	// Chip select control pin
 //#define TFT_DC		2	// Data Command control pin
 //#define TFT_RST		4	// Reset pin (could connect to RST pin)
@@ -44,16 +44,16 @@ Find following lines of the text (at 156 line number):
 ```
 and change it to this:
 ```
-#define TFT_MISO	19
-#define TFT_MOSI	23
-#define TFT_SCLK	18
-#define TFT_CS		5   
-#define TFT_DC 	4   
-#define TFT_RST	22  
-//#define TFT_RST	-1  
-//#define TFT_BL	32  
-#define TOUCH_CS	14     
-//#define TFT_WR	22  
+#define TFT_MISO		19
+#define TFT_MOSI		23
+#define TFT_SCLK		18
+#define TFT_CS			5   
+#define TFT_DC			4   
+#define TFT_RST			22  
+//#define TFT_RST		-1  
+//#define TFT_BL		32  
+#define TOUCH_CS		14     
+//#define TFT_WR		22  
 ```  
 After this, save the file. We need to make these changes because pins of the TFT LCD screen are connected to pins of the NodeMCU-32S like in the changed text (you can see it on the connection diagram). Backlight pin is controlled separately, so we do not set-up it here.
 
