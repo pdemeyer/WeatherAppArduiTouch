@@ -39,7 +39,7 @@ Find following lines of the text (at 156 line number):
 							// connected to ESP32 board RST
 //#define TFT_BL		32	// LED back-light 
 							// (only for ST7789 with backlight control pin)
-//#define TOUCH_CS	21	// Chip select pin (T_CS) of touch screen
+//#define TOUCH_CS		21	// Chip select pin (T_CS) of touch screen
 //#define TFT_WR		22	// Write strobe for modified Raspberry Pi TFT only
 ```
 and change it to this:
@@ -66,3 +66,13 @@ and download .zip file. Then, to add it to the Arduino IDE, open Arduino IDE and
 
 The fifth library is for converting timestamps, called “TimeLib”. You can not find this library in the Manage Libraries. We have to download it from the GitHub. Go on this link: https://github.com/PaulStoffregen/Time 
 and download .zip file. Then, to add it to the Arduino IDE, open Arduino IDE and go to Sketch > Include Library > Add .ZIP Library… and add the downloaded .zip file.
+
+# Contorlling the screen
+
+In order to turn ON the screen and the following lines of code at the beginning of setup() function:
+```
+pinMode(15, OUTPUT);    
+digitalWrite(15, LOW);  // turn ON
+```
+
+You can use PWM on digital pin 15 to adjust different levels of brightness for screen.
