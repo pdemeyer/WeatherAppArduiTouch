@@ -79,7 +79,8 @@ You can use PWM on digital pin 15 to adjust different levels of brightness for s
 
 # Code explanation
 
-Code is explained in detail in free eBook Quick Starter Guide for ArduiTouch, and you can download it from:   https://www.az-delivery.de/products/arduitouch-kostenfreies-e-book?variant=18563477995616
+Code is explained in detail in free eBook Quick Starter Guide for ArduiTouch, and you can download it from:   
+https://www.az-delivery.de/products/arduitouch-kostenfreies-e-book?variant=18563477995616
 
 # Assembly guide
 
